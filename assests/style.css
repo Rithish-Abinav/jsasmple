@@ -11,7 +11,22 @@
     user-select: none;
     letter-spacing: 1.5px;
     -webkit-font-smoothing: antialiased;
-   /* cursor: url(images/skrew.png),auto; */
+}
+
+.ring{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+border: solid 3px;
+    color: orange;
+    border-top-color:transparent;
+    animation: ring 3s infinite linear;
+}
+@keyframes ring {
+    100%{
+        color: orange;
+        transform: rotate(2060deg);
+    }
 }
 .empty{
     color: white;
@@ -90,7 +105,8 @@ video{
     position: fixed;
     right: 0;
     height: 100vh;
-    background-color: black;
+    /* background-color: black; */
+    background-color:#384637;
     color: white;
     display: flex;
     padding-right: 7vw;
@@ -269,15 +285,15 @@ right: 0;
 .right-menu .logo{
     width: 150px;
     height: 100px;
-    /* background-color: red; */
-    transition: all;
-    transition-duration: 4s;
+
     display: flex;
     justify-content: center;
     align-items:center;
+
 }
 .right-menu .logo img{
     height: 100%;
+
 }
 
 .right-menu .content{
@@ -385,11 +401,11 @@ z-index: 3000;
 text-transform: capitalize;
 }
 .left-menu .line{
-    height: 40px;
-    width: 55px;
+    height: 80px;
+    width: 80px;
     /* background-color: white; */
-    background-image: url(images/website/logo/logo\ only.png);
-    background-size: contain;
+    background-image: url(images/LOGO\ NEW\ PNG.png);
+    background-size: cover;
     transition: all;
     transition-duration: 0.5s;
     position: relative;
@@ -571,7 +587,7 @@ width: 8vw;
  .project{
     width: 70%;
     padding: 0 2.5%;
-    height: 130vh;
+    height: 110vh;
     /* background-color: red; */
     color: white;
     text-align: justify;
@@ -625,7 +641,6 @@ width: 8vw;
     height: 150px;
     width: 250px;
     /* background-image: url(images/website/residential/01.jpg); */
-    background-color: red;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all;
@@ -653,7 +668,7 @@ width: 8vw;
     background-image: url(images/website/office/a01.jpg);
 }
 .extra-line{
-    height: 0.05vh;
+    height:0.1px;
     width:18%;
     background-color:white;
     position: relative;
@@ -706,7 +721,7 @@ align-items: center;
 }
 .odd{
     width: 100%;
-    height: 0.05vh;
+    height:0.1px;
     background-color: white;
     opacity: 60%;
     position:relative;
@@ -717,10 +732,13 @@ align-items: center;
     display: flex;
     align-items: center;
 }
+.project4{
+    display: none;
+}
 .even{
     width: 100%;
     opacity: 60%;
-    height: 0.05vh;
+    height:0.1px;
     background-color:white;
     position: relative;
     /* border-top-left-radius: 100%;
@@ -738,9 +756,6 @@ align-items: center;
     border-radius: 100%;
    left: 0;
     position: absolute;
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
 }
 
 .even::after{
@@ -751,8 +766,7 @@ align-items: center;
     border-radius: 100%;
     position: absolute;
     right: 0;
-    display: flex;
-    align-items: center;
+
 }
 
 .project .inner-content{
@@ -900,22 +914,37 @@ figure{
     position: absolute;
     top: 50%;
     left: 2%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
     background-color: black;
     color: white;
-    padding: 1.2% 1.5%;
+
     border-radius: 100%;
     z-index: 12999999999;
+}
+.leftarrows,.rightarrows{
+    padding: 18px;
+    border-radius: 100%;
 }
 .rightarrow{
     position: absolute;
     top: 50%;
     right: 2%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: rotate(180deg);
     font-size: 1rem;
     background-color: black;
     color: white;
-    padding: 1.2% 1.5%;
+    /* padding: 1.2% 1.5%; */
+    /* padding: 10px; */
     border-radius: 100%;
     z-index: 12999999999;
 }
@@ -923,134 +952,14 @@ figure{
     height: 100vh;
     width: 100vw;
   position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
-.logo-icon{
-    height: 118px;
-    width: 125px;
 
-    /* background-color: red; */
-    position:relative;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%,-50%);
-    /* overflow: hidden; */
 
-}
-.line11{
-    height: 75%;
-    width: 2%;
-    background-color: white;
-    position: absolute;
-    transform: rotate(90deg);
-    bottom:-36%;
-    left: 36%;
-    animation: logo 1s;
-animation-delay: 0.75s;
-animation-fill-mode: forwards;
-}
-.line22{
-    height: 45%;
-    width: 2%;
-    background-color: white;
-    position: absolute;
-    left: 0%;
-    bottom: 0;
-    animation: logo 1s;
-animation-delay: 0.5s;
-animation-fill-mode: forwards;
-}
-.line44{
-    height: 60%;
-    width: 3%;
-    background-color: white;
-    position: absolute;
-    left: 41%;
-    bottom: 0;
-    animation: logo 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes logo {
-    from{
-        background-color: white;
 
-    }
-    to{
-       background-color: orange;
-
-    }
-}
-.line33{
-    height: 46%;
-    width: 2%;
-    background-color: white;
-    position: absolute;
-    transform: rotate(72deg);
-left: 21%;
-top: 25%;
-animation: logo 1s;
-animation-delay: 0.25s;
-animation-fill-mode: forwards;
-}
-
-.line55{
-    height: 90%;
-    width: 3%;
-    background-color:white;
-    position: absolute;
-    left: 70%;
-    bottom: 0%;
-    animation: logo 1s;
-animation-delay: 1s;
-animation-fill-mode: forwards;
-}
-.line66{
-    height: 56%;
-    width: 2%;
-    background-color: white;
-    position: absolute;
-    transform: rotate(70deg);
-left: 47%;
-top: -9%;
-animation: logo 1s;
-animation-delay: 1.25s;
-animation-fill-mode: forwards;
-}
-.line77{
-    height: 40%;
-    width: 3%;
-    background-color: white;
-    position: absolute;
-    left: 22%;
-    top: 27%;
-    animation: logo 1s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-}
-.line88
-{
-    height: 70%;
-    width: 3%;
-    background-color:white;
-    position: absolute;
-    right: 12%;
-    bottom: 0%;
-    animation: logo 1s;
-animation-delay: 1.75s;
-animation-fill-mode: forwards;
-}
-.line99
-{
-    height: 50%;
-    width: 3%;
-    background-color:white;
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-    animation: logo 1s;
-animation-delay: 2s;
-animation-fill-mode: forwards;
-}
 .dummy{
     position: fixed;
     height: 100vh;
@@ -1190,14 +1099,16 @@ video{
   }
   .banner .right-menu{
 
-    width: 90vw;
+    width:100vw;
+padding-right:0;
+left: 0;
 height: 100vh;
-
-    transform: translateX(100vw);
+transform: translateX(105vw);
     display: flex;
     flex-direction: column;
     align-items: center;
     display: block;
+    z-index: 999999999999999999999999999999;
     /* animation-fill-mode: forwards; */
   }
   .menuclose{
@@ -1209,6 +1120,7 @@ height: 100vh;
   }
   .right-menu .logo{
     width:80px;
+    margin: 20px 0px 0px 20px;
     height:80px;
     /* background-color: red; */
     transition: all;
@@ -1693,5 +1605,11 @@ height: 100vh;
 .blank{
     display: none;
 }
+    .gs_reveal {
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0s;
+    }
+
 
 }
